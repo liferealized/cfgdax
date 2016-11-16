@@ -198,14 +198,5 @@
           , value="application/json"
         );
     }
-
-    private void function $dump(
-      required any var, boolean abort=true, boolean showudfs=false) {
-      writeDump(
-          var=arguments.var
-        , abort=arguments.abort
-        , showUDfs=arguments.showudfs
-      );
-    }
   }
 </cfscript>
