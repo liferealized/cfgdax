@@ -131,9 +131,11 @@
           }
         , "error" = {}
         , "data" = deserializeJSON(local.response.fileContent)
+        , "success" = true
       };
 
       if (local.response["status_code"] != 200) {
+        local.answer.success = false;
         local.answer.error = duplicate(local.answer.data);
         local.answer.data = {};
       }
