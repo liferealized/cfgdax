@@ -73,12 +73,12 @@
 
     public struct function buy() {
       arguments.side = "buy";
-      return placeOrder(argumentCollection=arguments);
+      return createOrder(argumentCollection=arguments);
     }
 
     public struct function sell() {
       arguments.side = "sell";
-      return placeOrder(argumentCollection=arguments);
+      return createOrder(argumentCollection=arguments);
     }
 
     public struct function createOrder(
